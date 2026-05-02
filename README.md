@@ -17,3 +17,21 @@ Focus on **Ad-Tech Integrity**, **Automation**, and **Cybersecurity**. Dedicated
 ---
 **Location:** Osorno, Chile[cite: 1].  
 **Email:** iantiasb@gmail.com[cite: 1].
+
+graph TD
+    A[Inicio: Monitorización Programada] --> B{Solicitud API Meta Ads}
+    B -->|Uso de Access Token seguro| C[Extracción de Métricas de Gasto y Acceso]
+    
+    C --> D{Motor de Detección de Anomalías}
+    
+    D -->|Gasto > Umbral Definido| E[ALERTA: Budget Leakage]
+    D -->|Acceso No Autorizado| F[ALERTA: Security Breach]
+    D -->|Cambio de Configuración| G[ALERTA: Config Anomaly]
+    
+    E & F & G --> H[Encriptación de Mensaje de Alerta]
+    H --> I[Integración API Telegram]
+    I --> J[Envío de Notificación en Tiempo Real]
+    
+    D -->|Sin Anomalías| K[Log de Integridad del Sistema]
+    J --> K
+    K --> L[Fin: Estado de Standby]
