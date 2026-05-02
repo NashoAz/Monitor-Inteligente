@@ -18,6 +18,7 @@ Focus on **Ad-Tech Integrity**, **Automation**, and **Cybersecurity**. Dedicated
 **Location:** Osorno, Chile[cite: 1].  
 **Email:** iantiasb@gmail.com[cite: 1].
 
+´´´mermaid
 graph TD
     A[Inicio: Monitorización Programada] --> B{Solicitud API Meta Ads}
     B -->|Uso de Access Token seguro| C[Extracción de Métricas de Gasto y Acceso]
@@ -35,3 +36,4 @@ graph TD
     D -->|Sin Anomalías| K[Log de Integridad del Sistema]
     J --> K
     K --> L[Fin: Estado de Standby]
+´´´
